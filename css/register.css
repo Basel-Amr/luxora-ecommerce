@@ -1,0 +1,63 @@
+@import url("login.css");
+.register-card {
+  max-width: 540px;
+}
+.register-card .auth-heading {
+  margin-bottom: 1.35rem;
+}
+.name-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+.strength {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 0.55rem;
+  color: #777780;
+  font-size: 0.68rem;
+  line-height: 1.35;
+}
+.strength-bar {
+  width: 3.8rem;
+  height: 0.25rem;
+  flex: none;
+  background: #33333b;
+  border-radius: 999px;
+  transition: background 0.2s;
+}
+.strength.weak .strength-bar {
+  background: #d56a60;
+}
+.strength.medium .strength-bar {
+  background: #d4af37;
+}
+.strength.strong .strength-bar {
+  background: #78c28a;
+}
+.strength.weak .strength-label {
+  color: #d58c85;
+}
+.strength.medium .strength-label {
+  color: #d8be63;
+}
+.strength.strong .strength-label {
+  color: #9bd7ad;
+}
+.terms-row {
+  margin-bottom: 0;
+}
+.terms-row + .field-error {
+  margin-top: 0.35rem;
+}
+@media (min-width: 480px) {
+  .name-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .register-card {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}

@@ -1,0 +1,39 @@
+/* 
+<!DOCTYPE html>
+<!--
+    *************************************************
+    Student information
+    *************************************************
+    Name        : Basel Amr Barakat
+    ID          : 286222263002
+    Task Number : 10
+    Date        : 04 / 08 / 2026
+    Description : Grids
+    *************************************************
+-->
+
+
+/*==================================================
+                    Global
+==================================================*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: radial-gradient(
+    circle at top,
+    #2b2b45 0%,
+    #141420 35%,
+    #07070d 100%
+  );
+  min-height: 100vh;
+  perspective: 1800px;
+  overflow-x: hidden;
+  color: #fff;
+  text-align: center;
+}

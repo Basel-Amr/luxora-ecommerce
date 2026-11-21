@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Manage your LUXORA shopping cart and wishlist." />
+    <title>My Shopping | LUXORA</title>
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/products.css" />
+    <link rel="stylesheet" href="css/shopping-page.css" />
+  </head>
+  <body>
+    <header class="site-header" data-site-header>
+      <div class="announcement-strip" data-announcement>DISCOVER THE LUXORA COLLECTION <span aria-hidden="true">—</span> ELEVATE YOUR EVERYDAY STYLE</div>
+      <div class="header-inner">
+        <a class="brand-link" href="index.html" aria-label="LUXORA home">
+          <span class="brand-visual"><img class="brand-logo" data-logo-src="images/logo.png" alt="LUXORA logo" /><span class="brand-fallback" aria-hidden="true">LUXORA</span></span>
+          <span class="brand-copy"><span class="brand-name">LUXORA</span><span class="brand-slogan">Discover More. Live Better.</span></span>
+        </a>
+        <div class="header-search-wrap"><label class="sr-only" for="header-search">Search products, brands and categories</label><svg class="header-search-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"></circle><path d="m16 16 4.5 4.5"></path></svg><input id="header-search" class="header-search" type="search" placeholder="Search products, brands and categories..." autocomplete="off" data-header-search /><button class="header-search-clear" type="button" aria-label="Clear search" data-header-search-clear hidden>×</button></div>
+        <button class="mobile-menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" data-menu-toggle><span class="sr-only">Toggle navigation</span><span class="menu-line"></span><span class="menu-line"></span><span class="menu-line"></span></button>
+        <nav class="site-navigation" id="primary-navigation" aria-label="Primary navigation" data-navigation>
+          <a class="nav-link" href="index.html">Home</a><a class="nav-link active" href="index.html#products">Shop</a><div class="header-actions" data-auth-actions></div>
+        </nav>
+      </div>
+    </header>
+    <main class="shopping-main">
+      <section class="shopping-intro" aria-labelledby="shopping-title"><p class="section-kicker">Your LUXORA space</p><h1 id="shopping-title">My Shopping</h1><p>Manage your shopping cart and saved favorites.</p></section>
+      <section class="shopping-tabs" aria-label="Shopping sections" data-shopping-tabs>
+        <button type="button" class="shopping-tab is-active" data-shopping-tab="cart" aria-selected="true">Shopping Cart <span data-cart-tab-count>0</span></button>
+        <button type="button" class="shopping-tab" data-shopping-tab="wishlist" aria-selected="false">My Wishlist <span data-wishlist-tab-count>0</span></button>
+      </section>
+      <div class="shopping-content" data-shopping-content></div>
+    </main>
+    <div class="toast" role="status" aria-live="polite" data-toast></div>
+    <script src="js/auth.js" defer></script>
+    <script src="js/products.js" defer></script>
+    <script src="js/storage/shopping-storage.js" defer></script>
+    <script src="js/components/toast.js" defer></script>
+    <script src="js/home.js" defer></script>
+    <script src="js/components/cart-dropdown.js" defer></script>
+    <script src="js/components/wishlist-dropdown.js" defer></script>
+    <script src="js/pages/shopping-page.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Sign in to your premium shopping account."
+    />
+    <title>Sign in | LUXORA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/login.css" />
+  </head>
+  <body class="auth-page">
+    <main class="auth-shell">
+      <section class="auth-card" aria-labelledby="login-title">
+        <a class="brand" href="index.html" aria-label="LUXORA home"
+          ><span class="brand-mark">L</span><span>LUXORA</span></a
+        >
+        <div class="auth-heading">
+          <p class="eyebrow">Welcome back</p>
+          <h1 id="login-title">Sign in to continue</h1>
+          <p>
+            Access your orders, wishlist, and a more personal shopping
+            experience.
+          </p>
+        </div>
+        <div id="toast" class="toast" role="status" aria-live="polite"></div>
+        <form id="login-form" novalidate>
+          <div class="field">
+            <label for="email">Email address</label
+            ><input
+              id="email"
+              name="email"
+              type="email"
+              autocomplete="email"
+              placeholder="you@example.com"
+              required
+            />
+            <p class="field-error" data-error-for="email"></p>
+          </div>
+          <div class="field">
+            <div class="label-row">
+              <label for="password">Password</label
+              ><a href="#" class="muted-link" id="forgot-password"
+                >Forgot password?</a
+              >
+            </div>
+            <div class="password-wrap">
+              <input
+                id="password"
+                name="password"
+                type="password"
+                autocomplete="current-password"
+                placeholder="Enter your password"
+                required
+              /><button
+                class="toggle-password"
+                type="button"
+                data-target="password"
+                aria-label="Show password"
+              >
+                Show
+              </button>
+            </div>
+            <p class="field-error" data-error-for="password"></p>
+          </div>
+          <label class="check-row"
+            ><input id="remember" type="checkbox" />
+            <span>Remember me on this device</span></label
+          >
+          <button class="auth-button" type="submit">
+            <span class="button-label">Sign in</span
+            ><span class="spinner" aria-hidden="true"></span>
+          </button>
+        </form>
+        <p class="switch-auth">
+          New to LUXORA? <a href="register.html">Create an account</a>
+        </p>
+        <p class="security-note">
+          Demo authentication · Your password is protected with PBKDF2-SHA-256.
+        </p>
+      </section>
+    </main>
+    <script src="js/auth.js"></script>
+    <script src="js/components/toast.js"></script>
+    <script src="js/login.js"></script>
+  </body>
+</html>
